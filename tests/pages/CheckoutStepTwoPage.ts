@@ -38,12 +38,12 @@ export class CheckoutStepTwoPage extends BasePage{
 
     this.locatorHeaderTitle = this.page.locator('#header_container').getByText('Checkout: Overview');
     this.locatorQty = this.page.getByText('Qty');
-    this.locatorDescription = this.page.getByText('Description');    
+    this.locatorDescription = this.page.getByText('Descripti');    
     this.locatorPaymentInfoLabel = this.page.getByText('Payment Information', { exact: true});
     this.locatorPaymentInfoValue = this.page.getByText(/\bSauceCard\b\s#\d{5}/);
     this.locatorShippingInfoLabel = this.page.getByText('Shipping Information', { exact: true});
-    this.locatorShippingInfoValue = this.page.getByText('Free Pony Express Delivery!', { exact: true});
-    this.locatorPriceLabel = this.page.getByText('Price Total', { exact: true});
+    this.locatorShippingInfoValue = this.page.getByText('Free Pony Express!', { exact: true});
+    this.locatorPriceLabel = this.page.getByText('Price', { exact: true});
     this.locatorPriceItemValue = this.page.getByText(/\bItem total\b\:\s\$\d*.\d{2}/);
     this.locatorPriceTaxValue = this.page.getByText(/\bTax\b\:\s\$\d*.\d{2}/);
     this.locatorTotal = this.page.getByText(/\bTotal\b\:\s\$\d*.\d{2}/);
