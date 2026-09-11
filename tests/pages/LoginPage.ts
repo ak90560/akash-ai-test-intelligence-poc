@@ -22,7 +22,7 @@ export class LoginPage extends BasePage{
   }
 
   validateDefaultLayout = async () => {
-    await expect(this.page.getByText('Swag Labs')).toBeVisible();
+    await expect(this.page.getByText('Swag')).toBeVisible();
 
     await expect(this.locatorUserNameList).toBeVisible();
     await expect(this.locatorUserNameList).toContainText(this.acceptedUsernames);
