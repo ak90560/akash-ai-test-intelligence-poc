@@ -28,7 +28,7 @@ export class CartPage extends BasePage{
       this.products.push(new CartItemComponent(this.page, product));
     }
 
-    this.locatorYourCart = this.page.getByText('Your Cart');
+    this.locatorYourCart = this.page.getByText('Your');
     this.locatorQty = this.page.getByText('Qty');
     this.locatorDescription = this.page.getByText('Description');
     this.locatorContinueShoppingButton = this.page.getByRole('button', { name: 'Continue Shopping'});
